@@ -1,0 +1,42 @@
+RewriteEngine On
+RewriteRule ^home$ index.php [L]
+RewriteRule ^home-page$ ../../../index.php
+RewriteRule ^admin-login$ frm_admin_login.php [L]
+RewriteRule ^user-access$ frm_user.php [L]
+RewriteRule ^dashboard$ components/admin/frm_dashboard.php [L]
+RewriteRule ^admin-account$ components/admin/admin_account/frm_admin_account.php [L]
+RewriteRule ^add-account$ components/admin/admin_account/add_admin.php [L]
+RewriteRule ^update-admin-account$ components/admin/admin_account/update_admin.php [L]
+RewriteRule ^delete-account$ components/admin/admin_account/delete_admin.php [L]
+RewriteRule ^verify-account$ components/admin/admin_account/email_verification.php [L]
+RewriteRule ^web-app-info$ components/admin/web_app_info/frm_web_app_info.php [L]
+RewriteRule ^add-web-app-info$ components/admin/web_app_info/add_website_info.php [L]
+RewriteRule ^update-web-app-info$ components/admin/web_app_info/update_website_info.php [L]
+RewriteRule ^delete-web-app-info$ components/admin/web_app_info/delete_website_info.php [L]
+RewriteRule ^flood-risk-info$ components/admin/flood_risk_info/frm_flood_risk_info.php [L]
+RewriteRule ^add-flood-risk-info$ components/admin/flood_risk_info/add_flood_risk.php [L]
+RewriteRule ^update-flood-risk-info$ components/admin/flood_risk_info/update_floodRisk_info.php [L]
+RewriteRule ^delete-flood-risk-info$ components/admin/flood_risk_info/delete_flood_risk_info.php [L]
+RewriteRule ^flood-map-info$ components/admin/flood_map_info/frm_flood_map.php [L]
+RewriteRule ^add-flood-map-info$ components/admin/flood_map_info/add_flood_map.php [L]
+RewriteRule ^update-flood-map-info$ components/admin/flood_map_info/update_flood_map.php [L]
+RewriteRule ^delete-flood-map-info$ components/admin/flood_map_info/delete_flood_map.php [L]
+RewriteRule ^weather-info$ components/admin/weather_info/frm_weather_info.php [L]
+RewriteRule ^add-weather-info$ components/admin/weather_info/add_weather_info.php [L]
+RewriteRule ^delete-weather-info$ components/admin/weather_info/delete_weather_info.php [L]
+RewriteRule ^request-data$ components/admin/request_data/frm_request_data.php [L]
+RewriteRule ^delete-request-data$ components/admin/request_data/frm_request_data.php [L]
+RewriteRule ^message-management$ components/admin/live_chat_management/frm_live_chat_management.php [L]
+RewriteRule ^fetch-message-management$ components/admin/live_chat_management/fetch.php [L]
+RewriteRule ^send-message-management$ components/admin/live_chat_management/send.php [L]
+RewriteRule ^delete-message-management$ components/admin/live_chat_management/delete_chat.php [L]
+RewriteRule ^clear-message-management$ components/admin/live_chat_management/clear.php [L]
+RewriteRule ^send-user-message-management$ components/user/live_chat/send.php [L]
+RewriteRule ^fetch-user-message-management$ components/user/live_chat/fetch.php [L]
+RewriteRule ^logout$ components/admin/logout.php [L]
+
+php_value display_errors Off
+php_value mbstring.http_input auto
+php_value date.timezone Asia/Manila
+php_value upload_max_filesize 128M
+php_value post_max_size 128M
